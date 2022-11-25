@@ -1,18 +1,22 @@
+
+
 package com.cybage.model;
 
 import java.util.List;
 import java.util.Set;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.ColumnResult;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,43 +36,55 @@ public class Admin{
 
     @Id
     @GeneratedValue
-    @Min
-    @Max
-    @Column(name="Id")
-    private int Id;
-    @Column(name="patientName");
+   
+    @Column(name="id")
+    private int id;
+    @Column(name="AdminName")
     @NotNull
-    private String doctorName;
+    private String AdminName;
 
 
-    @Column(name="emailId");
+    @Column(name="emailId")
     @NotNull
     private String emailId;
 
 
-    @Column(name="Password");
+    @Column(name="Password")
     @NotNull 
-    private password Password;
+    private String Password;
 
-    @Column(name="mobileNumber");
+    @Column(name="mobileNumber")
     @NotNull
     private String mobileNumber;
 
 
-    @Column(name="gender");
+    @Column(name="gender")
     @NotNull
     private String gender;
 
 
-    @Column(name="statusOfAccount");
+    @Column(name="statusOfAccount")
     @NotNull
     private String statusOfAccount;
 
 
-    @Column(name="attemptsOfLogin");
+    @Column(name="attemptsOfLogin")
     @NotNull
     private String attemptsOfLogin;
 
+
+	public Object getPrice() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public void setPrice(Object price) {
+		// TODO Auto-generated method stub
+		
+	}
+ 
+	
 
 
 }
