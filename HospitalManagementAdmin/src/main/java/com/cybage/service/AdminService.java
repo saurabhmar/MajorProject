@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cybage.model.Admin;
+import com.cybage.model.Doctors;
 import com.cybage.repository.AdminRepository;
 
 @Service
@@ -55,5 +56,42 @@ private AdminRepository adminRepository;
 		// TODO Auto-generated method stub
 		return null;
 	}
+	public boolean unBlockDoctorAccount(Long doctorId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	public List<Admin> getAllPatients() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public boolean unBlockPatientAccount(Long patientId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	public boolean addDoctor(Doctors doctor) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	public void deleteDoctor(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void updateDoctor(int id, Admin admin) {
+		// TODO Auto-generated method stub
+		
+	}
+	public Admin getDoctorById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public List<Admin> getAllDoctorWithpecialization(int specializationId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void updateDoctor(int id, Doctors doctor) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

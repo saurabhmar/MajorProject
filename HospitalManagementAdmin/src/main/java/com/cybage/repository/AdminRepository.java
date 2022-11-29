@@ -11,5 +11,5 @@ public interface AdminRepository extends JpaRepository<Admin,Integer>{
 
 
 	List<Admin> findAll();
-	
+
 }
