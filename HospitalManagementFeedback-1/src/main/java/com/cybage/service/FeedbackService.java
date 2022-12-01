@@ -27,9 +27,9 @@ public class FeedbackService {
 			return feedbackRepository.findAll();
 
 		}
-		public  void deleteFeedback(int id) {
+		public  void deleteFeedback(int feedbackId) {
 			
-			 feedbackRepository.deleteById(id);
+			 feedbackRepository.deleteById(feedbackId);
 							
 		}
 }
