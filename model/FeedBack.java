@@ -26,7 +26,7 @@ public class FeedBack {
 		FeedbackId = feedbackId;
 	}
 
-	public String getMessage() {
+	public String getMessage() {  
 		return Message;
 	}
 
